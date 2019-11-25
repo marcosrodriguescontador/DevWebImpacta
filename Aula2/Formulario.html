@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta description="Aprendendo a fazer formulários" />
+    <meta keywords="formulários" />
+    <meta author="Marcos Aurelio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <Main>
+        <h2>Formulario de Cadastro</h2>
+        <form action="Cadastra.php" method="POST">
+            <div>
+                <label for="nomeId">Nome:</label>
+                <input tabindex="1" type="text" name="nome" id="nomeId" autofocus required maxlength="50" minlength="3"/>
+            </div>
+            <div>
+                <label for="emailId">Email:</label>
+                <input tabindex="2" type="email" name="email" id="emailId" required placeholder="Ex: seuemail@gmail.com"
+                pattern=".+@+."/>
+            </div>
+            <div>
+                <label for="senhaId">Senha:</label>
+                <input tabindex="3" type="password" name="senha" id="senhaId" required />
+            </div>
+            <div>
+                <label  for="estado">Estado</label>
+                <select tabindex="4" name="estado" id="estadoId" required>
+                    <option value="" selected>Selecione o Estado</option>
+                    <option value="Acre">AC</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="São Paulo">SP</option>
+                    <option value="Minas Gerais">MG</option>
+                    <option value="PR">PR</option>
+                </select>
+            </div>
+            <div>
+                <p>Genero:</p>
+                <label for="M">Masculino</label>
+                <input checked tabindex="5" name="genero" id="M" type="radio" value="M" >
+                <label for="F">Feminino</label>
+                <input tabindex="6" name="genero" id="F" type="radio" value="F" >
+            </div>
+            <div>
+                <p>Quais consoles você gosta?</p>
+                <div>
+                    <input checked type="checkbox" id="ps4" name="consoles[]" value="playStation4">
+                    <label for="ps4">Playstation 4</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="xbox" name="consoles[]" value="XboxOne">
+                    <label for="Xbox">Xbox One</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="switch" name="consoles[]" value="switch">
+                    <label for="switch">Nintendo Switch</label>
+                </div>
+            </div>
+            <div>
+                <label for="dataNascId">Data de Nascimento</label>
+                <input type="date" name="dataNasc" id="dataNascId">
+            </div>
+            <div>
+            <div>
+                <label for="dataagoraId">Data e hora</label>
+                <input type="datetime-local" name="dagaagora" id="dataagoraId">
+            </div>
+            <div>
+                <input type="number" name="numero" id="numeroID" step="0.01" min="0" max="999999999">
+            </div>
+
+            <div>
+            <button>Cadastrar</button>
+            </div>
+            
+            <input type="color" name="cor" id="corId">
+
+        </form>
+    </Main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

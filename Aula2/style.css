@@ -1,0 +1,52 @@
+/* seletor{
+comando: valores;
+comando2: valores;
+}*/
+body{
+    background-color: black;
+    color: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+
+}
+h1,h2, h3{
+    color: yellow;
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    color:#ff0000;
+}
+/* o correstonde do id do html é o # no CSS*/
+/* o correstonde da class do html é o . no CSS*/
+#artigo{
+    background-color: #AAAA
+}
+.meuTitulo{
+    background-color: #ffa500;
+    font-size: 25px;
+    font-style: italic;
+   
+}
+.justificado{
+    text-align: justify;
+}
+
+.negrito{
+    font-weight: bold;
+}
+a{
+    color: #c6aa1c;
+    text-decoration: none;
+    text-decoration: overline;
+}
+
+a:hover{
+    color: #d8eff4;
+    text-decoration: underline;
+}
+.fundoAzul{
+    margin-block-end: 40px;
+    background-color: blue;
+}
+

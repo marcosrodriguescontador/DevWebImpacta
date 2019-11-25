@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div id="nome"><b>Matheus</b></div>
+
+    <form id="formulario"action="">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"></input>
+        </div>
+        <div>
+            <label for="nomeCompleto">NomeCompleto</label>
+            <input type="text" name="nomeCompleto" id="nomeCompleto"></input>
+        </div>
+
+        <button >Cadastrar</button>
+
+    </form>
+    <h4 id="resultado"></h4>
+    <script>
+    //comece com os seletores
+        var formulario = document.getElementById("formulario");
+        var email = document.getElementById("email");
+        var nomeCompleto = document.getElementById("nomeCompleto");
+        var resultado = document.getElementById("resultado");
+    // programamos o evento de envio
+    formulario.onsubmit = function(evento){
+        evento.preventDefault();
+        //console.log(email.value);
+        resultado.innerHTML = "Email: " +email.value + '<br>';
+        resultado.innerHTML += "Nome: " +nomeCompleto.value + '<br>';
+        formulario.reset();
+      // formulario.innerHTML = '';
+    };
+
+    
+    </script>
+
+
+
+    <script>
+    /*
+        Bases do JavaScript
+        Seleção de elementos
+        Evento
+
+
+    */
+    
+    
+    
+    
+    //pra comentar o bloco seleciona tudo e control ;
+        // var elementoNome = document.getElementById("nome");
+        // console.log(elementoNome.innerText);
+        // console.log(elementoNome.innerHTML);
+
+        // /*
+        // pra obter um elemento por javascript é necessário buscar pelo ID
+        // tag composta 
+        // o texto entre tags deve ser obtido pelo .innerText
+        // o html entre tags deve ser obtido pelo .innerHTML
+
+        // tag única
+        // o valor é recuperado por .value
+
+        // */
+        // elementoNome.innerText = "Marcos"
+        // console.log(elementoNome.id);
+        // console.log(elementoNome.tagName);
+        // elementoNome.innerHTML = "<mark>tete123</mark>"
+
+        // var email=document.getElementById("email");
+        // console.log(email.value)
+        // email.value = "email@gmail.com"
+
+    </script>
+</body>
+
+</html>

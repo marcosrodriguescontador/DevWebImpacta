@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS - Javascript</title>
+    <style>
+        .barra {
+            width: 2px;
+            height: 2px;
+            background: #666;
+        }
+
+        @keyframes grow {
+            0% {
+
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="fundoBtn">Click me</button>
+
+    <div class="barra"></div>
+
+    <script>
+        var fundoBtn = document.getElementById('fundoBtn');
+        var barra = document.querySelector('.barra');
+
+        fundoBtn.onclick = function () {
+            // coloca cor no fundo do body!
+            document.body.style.backgroundColor = '#FFF';
+            // fundoBtn.style.display = 'none';
+
+            document.title = 'Mudamos o titulo da página';
+
+            barra.style.animation = 'grow 2s ease-in-out forwards';
+
+            fundoBtn.remove();
+        };
+
+        fundoBtn.onmouseover = function () {
+            this.style.width = '300px';
+            this.style.height = '100px';
+        };
+
+        fundoBtn.onmouseout = function () {
+            this.style.width = '100px';
+            this.style.height = '50px';
+        };
+    </script>
+</body>
+</html>

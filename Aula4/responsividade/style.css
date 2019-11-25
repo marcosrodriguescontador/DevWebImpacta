@@ -1,0 +1,84 @@
+body{
+margin: 0px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+
+.container{
+    background: #cceaea;
+    
+}
+
+#menu{
+     background: #000;
+    color: #FFFFFF;
+}
+#menu ul{
+    margin: 0px 200PX;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    flex-wrap: wrap;
+}
+#menu li{
+    font-size: 1.3ren;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+main{
+    background: #006b6b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px 10%;
+}
+
+main h1{
+    margin: 0px;
+    padding-top: 10px;
+}
+footer{
+    background: #009a9a;
+    color: white;
+    bottom:0;
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed;
+    text-align: center;
+}
+
+/*Meida Query 
+programar mesma tela em várias versões*/
+/*aplicando estilos para telas menores que 500 px*/
+@media screen and (max-width: 600px){
+    #menu{
+        padding: 5px 0px;
+    }
+
+    #menu ul{
+        margin: 0px 0px;
+        display: block;
+        height: auto;
+    }
+
+    #menu li{
+        margin-bottom: 20px;
+    }
+
+
+    footer{
+        background: #009a9a;
+        color: white;
+        bottom:0;
+        width: 100%;
+        padding: 2px 0px;
+        position: fixed;
+        text-align: center;
+    }
+
+
+
+}

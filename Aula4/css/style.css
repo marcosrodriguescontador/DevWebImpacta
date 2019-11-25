@@ -1,0 +1,50 @@
+ 	.container{
+    width: 600px;
+    margin: 5px auto;
+    border: 1px solid #000;
+    padding-top: 5px;
+    display: block;
+    /*display: none "faz sumir"*/;
+}
+.caixaProduto{
+    
+    margin: 16px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 1px solid blue;
+}
+.clear{
+    clear: both;
+}
+.display-inline{
+    background: blue ;
+    display: inline;
+}
+.carregando{
+    width: 50px;
+    display: block;
+   /* margin: -15px auto*/;
+}
+.texto{
+    text-align: center;
+}
+
+.container-flex{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.caixa-item{
+    flex-grow: 1;
+    border: 1px solid black;
+}
+.caixa-item2{
+    flex-grow: 2;
+        border: 1px solid black;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}

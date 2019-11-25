@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+        .circulo {
+            border: 20px solid green;
+            border-top: 20px solid white;
+            border-bottom: 20px solid blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            animation: girar 0.5s infinite alternate-reverse;
+        }
+
+        .caixa {
+            border: 1px solid #444;
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .caixa:hover {
+            border: 6px solid #333;
+            width: 50px;
+            height: 50px;
+            animation: crescer 0.3s forwards linear;
+        }
+        .caixa::first-letter{
+            font-size: 30px;
+        }
+
+
+        .table{
+            border-collapse: collapse;
+            margin: 1px;
+
+        }
+
+        .table thead th::first-letter{
+            font-size: 22px;
+            color: red;
+        }
+
+        .table td, th{
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        .table thead tr:first-child{
+            background: #bbb;
+        }
+
+        .table tbody tr:last-child{
+            background: #999
+        }
+
+/*        .table tbody td:nth-child(2){
+            background:#a2e
+        }
+
+pega coluna
+*/
+        .table tbody tr:nth-child(even){
+            background: green;
+        }
+        .table tbody tr:nth-child(odd){
+            background: #4c6394;
+        }
+
+        input[type=email]{
+            background: #4444;
+            color: white;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes crescer {
+            from {
+                transform: scale(1.5);
+            }
+
+            to {
+                transform: scale(1);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circulo">
+
+    </div>
+    <div class="caixa">
+        Texto
+    </div>
+
+
+    <input type="email" name="email" id ="">
+    <input type="text">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>CEP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>joão@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>joão@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+            <tr>
+                <td>pedro</td>
+                <td>joãopedro@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>joão@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>joão@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+            <tr>
+                <td>pedro</td>
+                <td>joãopedro@gmail.com</td>
+                <td>(011)51515151</td>
+                <td>09831-525</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+</body>
+
+</html>

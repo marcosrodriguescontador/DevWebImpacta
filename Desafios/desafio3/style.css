@@ -1,0 +1,39 @@
+body{
+    margin-left: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #d8eff4;
+}
+h1{
+color: #244c96;
+}
+h2, h3,h4{
+    color: #395da0;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: #ff0000;
+    text-decoration: underline;
+}
+ul{}
+li{
+    padding-top: 5px; 
+}
+
+.subtitulo{
+    color: #6581b5;
+}
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center
+}
+.italico{
+    font-style: italic;
+}
+.negrito{
+    font-weight: bold;
+}

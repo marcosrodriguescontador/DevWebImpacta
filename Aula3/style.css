@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'UbuntoLight';
+    src: url(fontes/Ubuntu-Light.ttf)
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    height: 1300px;
+    padding: 0;
+    margin: 0;
+}
+.box1{
+    border-top: 3px solid #7ca987;
+    background-color: #EEE;
+    padding: 10px;
+    margin: 20px auto ;
+    width: 600px;
+    border-radius: 0px  0px 10px 10px ;
+
+}
+
+ .shadow{
+     width: 300px;
+     height: 300px;
+     background-color: #94b4ab;
+     margin: 30px auto;
+     -webkit-box-shadow: 2px 2px 8px 8px rgba(204,12,NaN,1);
+     -moz-box-shadow: 2px 2px 8px 8px rgba(204,12,NaN,1);
+     box-shadow: 2px 2px 8px #85a79d;
+
+ }
+ .sombra-texto{
+     font-family: UbuntuLight ;
+     color: #fb4c19;
+     text-shadow: 1px 1px 3px #333;
+ }
+ .caixa1{
+     border: 1px solid #DDD;
+     width: 500px;
+     margin: 60px auto;
+     padding: 10px;
+     border-radius: 5px;
+     position: relative;
+ }
+ .imagem{
+     float:left;
+     width: 150px;
+     
+ }
+ .clear{
+     clear: both;
+ }
+ .promocao{
+     background: #fb4c19;
+     color: #ffffff;
+     border-radius: 0px 5px 5px 0px;
+     width: 150px;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     position: absolute;
+     left: -10px;
+     z-index: 100;
+ }
+ .titulo{
+     position: fixed;
+     bottom: 0;
+ }
+ .menu{
+     height:  50px;
+     width: 100%;
+     top: 0;
+     background-color: black ;
+     position: fixed;
+     z-index: 1000     ;
+ }
